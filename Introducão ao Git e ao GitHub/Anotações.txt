@@ -1,0 +1,75 @@
+Link para donwload do Git: https://git-scm.com/download/win
+O Git Bash é um terminal estendido para otimizar o uso do GIT.
+
+
+----------Verificar E-mail e Nickname Cadastrados----------
+
+No git bash verificar se o git tem configurado o mesmo nickname e e-mail configurado no GitHub.
+
+1º digitar o seguinte comando:
+$ git config --list
+Verificar na tela se o e-mail e nickname são os mesmo do Github
+
+
+
+2º Caso e-mail e nickname não for, trocar o email e nikname com os seguintes comandos:
+
+Primeiro exclua o email cadastrado com o comando abaixo:
+$ git config --global --unset.email (Esse comando apagará o email cadastrado no Git)
+
+depois exclua o nickname cadastrado com o comando abaixo:
+$ git config --global --unset user.nickname (Esse comando apagará o nickname cadastrado no Git)
+
+
+
+3º Cadastre o novo email, digitar o comando:
+
+$ git config --global user.email seuemail@exemplo.com.br
+
+
+
+4º Depois cadastre o novo nickname
+
+$ git config --global user.nickname "Fulano de Tal"
+
+
+
+
+
+----------Criando um Repositório----------
+
+Primeiro entrar no site GitHub e criar um repositório
+
+1º Clicar em menu
+2º Clicar em Your repositories
+3º Clicar no botão new
+4º Na tela do new repository:
+	-preencher o repository name e descrição;
+	-selecionar se o repositório vai ser público ou privado;
+	-se vai adcionar o readme ou não;
+5º Clicar no botão create repository
+
+
+
+
+----------Apontando um Repositório----------
+
+
+Depois que eu criei o repositório vazio no Github eu tenho que apontá-lo no Git.
+
+Dentro do repositório local (máquina) que vou empurrar para o Github (servidor), clicar com o botão direito do mouse e escolher Git Bash Here e digitar o seguinte comando:
+$ git remote add origin https://github.com/endereço do repositório criado
+
+
+
+----------Empurrando o repositório----------
+
+Digitar no Git
+
+$ git push origin main
+
+Após o comando abrirá uma janela para confirmar senha do GitHub
+
+
+
+
